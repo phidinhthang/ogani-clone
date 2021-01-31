@@ -3,6 +3,7 @@ const setup = () => {
 	$(window).resize(updateSize);
 	handleResponsive(width);
 	handleToggleSidebar();
+	initialSlickNav();
 }
 $(document).ready(setup);
 
@@ -33,4 +34,23 @@ const handleToggleSidebar = () => {
 			$('.sidebar').removeClass('open');
 		},300)
 	})
+}
+
+
+const initialSlickNav = () => {
+	$('#sub__dropdown > a').click(function(){
+		$('#sub__dropdown__menu').slicknav('toggle')
+	});
+	$(function(){
+        $('#sub__dropdown__menu').slicknav({
+        	'label':'',
+        	'appendTo':'#sub__dropdown',
+        	'beforeOpen': function(){
+        		$('.slicknav_arrow').text('▼')
+        	}, // Called before menu or sub-menu opened.
+					'beforeClose': function(){
+						$('.slicknav_arrow').text('►')
+					} // Called before menu or sub-menu closed.
+        });
+    });
 }

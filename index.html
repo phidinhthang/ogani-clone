@@ -78,7 +78,7 @@
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
-					<div class="header__bottom__cart d-flex justify-content-between">
+					<div class="header__bottom__cart">
 						<div>
 							<i class="fa fa-heart"></i>
 							<span class="amount">1</span>
@@ -101,10 +101,80 @@
 	<aside class="sidebar">
 		<div class="sidebar__overlay">
 		</div>
-		<div class="sidebar__menu"></div>
+		<div class="sidebar__menu">
+			<div class="logo">
+				<img src="asset/images/logo.webp" alt="Ogani">
+			</div>
+			<div class="sidebar__menu__cart">
+				<div>
+					<i class="fa fa-heart"></i>
+					<span class="amount">1</span>
+				</div>
+				<div>
+					<i class="fa fa-shopping-cart"></i>
+					<span class="amount">3</span>
+				</div>
+				<div class="sidebar__menu__cart__price">
+					<p>Item: <span>$150.00</span></p>
+				</div>
+			</div>
+			<ul class="wrapper">
+				<li class="sidebar__menu__language">						
+					<img src="asset/images/language.webp" alt="language">
+					<p>English</p>
+					<i class="fa fa-angle-down"></i>
+					<ul class="sidebar__menu__language__dropdown">
+						<li>
+							Spanish
+						</li>
+						<li>English</li>
+					</ul>
+				</li>
+				<li class="sidebar__login">
+					<i class="fa fa-user"></i>
+					<a>Login</a>
+				</li>
+			</ul>
+			<ul class="sidebar__menu__dropdown">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li id="sub__dropdown">
+					<a href="#">Pages <span class="slicknav_arrow">►</span></a>
+					
+				</li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<ul class="sidebar__icon">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+			</ul>
+			<div class="sidebar__email">
+				<i class="fa fa-envelope"></i>
+				<p>hello@colorlib.com</p>
+			</div>
+			<div class="sidebar__detail">			
+				<p>Free Shipping for all Order of $99</p>
+			</div>
+		</div>
 	</aside>
 
 	<!-- SIDEBAR -->
+
+	<!-- BANNER -->
+	<section class="container">
+		
+	</section>
+
+	<ul id="sub__dropdown__menu" style="display:none">
+		<li><a href="#">Shop Details</a></li>
+		<li><a href="#">Shopping Cart</a></li>
+		<li><a href="#">Check Out</a></li>
+		<li><a href="#">Blog Details</a></li>
+	</ul>
+	<!-- BANNER -->
 	<!-- SCRIPT -->
 	<script src="asset/dist/jquery.min.js"></script>
 	<script src="asset/dist/owl.carousel.min.js"></script>

@@ -147,9 +147,13 @@ a {
 			}
 		}
 		&__cart {
+			display:flex;
 			> div:not(:last-child) {
 				position:relative;
-				margin-right:30px;
+				margin-right:15px;
+			}
+			> div:last-child {
+				margin-left:15px;
 			}
 			.amount {
 				position:absolute;
@@ -166,7 +170,7 @@ a {
 				background:$green;
 				transform:translate(50%,50%);
 			}
-			&__price p{
+			p{
 				font-size:13px;
 				span {
 					font-weight:bold;
@@ -195,6 +199,11 @@ a {
 		background-color: rgba(0,0,0,0.5);
 	}
 	&__menu {
+		padding:30px;
+		.logo {
+			margin-top:22px;
+			margin-bottom: 24px;
+		}
 		position:absolute;
 		top:0;
 		transform:translateX(-300px);
@@ -202,6 +211,75 @@ a {
 		width:300px;
 		background: white;
 		transition:all .3s ease-in-out;
+		&__cart {
+			@extend .header__bottom__cart;
+		}
+		.wrapper {
+			display:flex;
+			font-size:13px;
+			margin-top:27px;
+			> li+li {
+				border-left:1px solid $gray;
+			}
+		}
+		&__language {
+			display:flex;
+			align-items: flex-start;
+			position:relative;
+			> img {
+				transform:translateY(3px);
+				margin-right:6px;
+			}
+			> p {
+				margin-left:3px;
+				margin-right:7px;
+			}
+			> i {
+				margin-right:23px;
+				transform:translateY(3px);
+			}
+			&__dropdown {
+				position:absolute;
+				top:100%;
+				transform:translateY(100%);
+				left:0;
+				background-color:#000;
+				color:white;
+				visibility:hidden;
+				opacity:0;
+				transition:visibility 0s, opacity .5s,transform .5s;
+				padding:8px;
+				width:80%;
+				> li+li {
+					margin-top:6px;
+				}
+			}
+			&:hover &__dropdown {
+				transform:translateY(0);
+				opacity:1;
+				visibility:visible;
+			}
+		}
+		&__dropdown {
+			font-size:15px;
+			margin-top:35px;
+			> li {
+				border-bottom:1px solid $gray;
+				padding:7px 0;
+				font-weight:600;
+				transition:$transition;
+				&:hover > a{
+					color:$green;
+				}
+			}
+			.slicknav_nav {
+				@extend .sidebar__menu__dropdown;
+				margin:0;
+				> li:last-child {
+					border-bottom:none;
+				}
+			}
+		}
 	}
 }
 
@@ -210,6 +288,8 @@ a {
 	transition:visibility 0s,opacity .3s;
 	opacity:1;
 }
+
+
 
 
 
