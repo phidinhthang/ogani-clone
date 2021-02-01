@@ -163,18 +163,249 @@
 
 	<!-- SIDEBAR -->
 
-	<!-- BANNER -->
-	<section class="container">
-		
-	</section>
-
+	<!-- SUB_DROPDOWN_MENU -->
 	<ul id="sub__dropdown__menu" style="display:none">
 		<li><a href="#">Shop Details</a></li>
 		<li><a href="#">Shopping Cart</a></li>
 		<li><a href="#">Check Out</a></li>
 		<li><a href="#">Blog Details</a></li>
 	</ul>
+	<!-- SUB_DROPDOWN_MENU -->
+
+
+	<!-- BANNER_CATEGORY_LIST -->
+	<ul id="banner__categories__list">
+		<li><a href="">Fresh Meat</a></li>
+		<li><a href="">Vegetables</a></li>
+		<li><a href="">Fruit & Nut Gifts</a></li>
+		<li><a href="">Fresh Berries</a></li>
+		<li><a href="">Ocean Foods</a></li>
+		<li><a href="">Butter & Eggs</a></li>
+		<li><a href="">Fastfood</a></li>
+		<li><a href="">Fresh Onion</a></li>
+		<li><a href="">Papayaya & Crisps</a></li>
+		<li><a href="">Oatmeal</a></li>
+		<li><a href="">Fresh Bananas</a></li>
+	</ul>
+	<!-- BANNER_CATEGORY_LIST -->
+
 	<!-- BANNER -->
+	<section class="banner container">
+			<div class="row">
+				<div class="col-lg-3 pl-0">
+					<div class="banner__categories" id="banner__categories">
+						<div class="banner__categories__label" id="banner__categories__label">
+							<a href="#"><i class="fa fa-bars"></i> All departments <i class="fa fa-angle-down"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 pr-lg-0 pl-sm-0 pl-lg-3">
+						<div class="banner__search row  mt-4 mt-lg-0">
+							<div class="col-md-9">
+								<form>
+									<div class="banner__search__categories">
+										<span>All categories</span><i class="fa fa-angle-down"></i>
+									</div>
+									<input type="text" placeholder="What do you need ?">
+									<button type="submit">Search</button>
+								</form>
+							</div>
+							<div class="col-md-3">
+								<div class="banner__search__contact">
+									<div class="banner__search__contact__icon">
+										<i class="fa fa-phone"></i>
+									</div>
+									<div class="banner__search__contact__text">
+										<p class="banner__search__contact__text__phone">+65 11.188.888</p>
+										<p class="banner__search__contact__text__content">support 24/7 time</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- SAME HEADER IN ALL THE PAGES  -->
+						<div class="banner__image">
+							<div class="banner__image__content">
+								<small>FRUIT FRESH</small>
+								<h1>Vegetable</h1>
+								<h2>100% Organic</h2>
+								<p>Free Pickup and Delivery Available</p>
+								<button>Shop Now</button>
+							</div>
+						</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- BANNER -->
+
+	<!-- CATEGORIES -->
+
+	<section class="categories mt-5">
+		<div class="container px-0">
+			<div class="owl-carousel owl-theme position-relative">
+		    <div class="product__item">
+		    	<img src="asset/images/cat-1.webp" alt="">
+		    	<h4 class="product__item__name">Fresh Fruit</h4>
+		    </div>
+		    <div class="product__item">
+		    	<img src="asset/images/cat-2.webp" alt="">
+		    	<h4 class="product__item__name">Dried Fruit</h4>
+		    </div>
+		    <div class="product__item">
+		    	<img src="asset/images/cat-3.webp" alt="">
+		    	<h4 class="product__item__name">Vegetables</h4>
+		    </div>
+		    <div class="product__item">
+		    	<img src="asset/images/cat-4.webp" alt="">
+		    	<h4 class="product__item__name">Drink Fruits</h4>
+		    </div>
+		    <div class="product__item">
+		    	<img src="asset/images/cat-5.webp" alt="">
+		    	<h4 class="product__item__name">Drink Fruits</h4>
+		    </div>
+			</div>
+		</div>
+	</section>			
+	<!-- CATEGORIES -->
+
+	<!-- FEATURES -->
+
+	<section class="featured">
+		<div class="container">
+			<h4 class="featured__header">Featured Product
+				<div class="divider"></div>
+			</h4>
+			<div class="featured__list">
+				<div class="featured__list__control__group">
+			    <button type="button" data-filter="all" class="active">All</button>
+					<button type="button" data-filter=".orange">Oranges</button>
+					<button type="button" data-filter=".fresh__meat">Fresh Meat</button>
+					<button type="button" data-filter=".vegetables">Vegetables</button>
+					<button type="button" data-filter=".fastfood">Fastfood</button>
+				</div>
+				<div class="featured__list__item__container row px-0 mt-5">
+			    <div class="mix featured__list__item orange fresh__meat col-lg-3 col-md-4 col-sm-6 px-3" data-order="1">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-1.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item vegetables fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="2">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-2.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item fresh__meat vegetables col-lg-3 col-md-4 col-sm-6 px-3" data-order="3">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-3.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item orange fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="4">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-4.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item fresh__meat vegetables col-lg-3 col-md-4 col-sm-6 px-3" data-order="5">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-5.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item orange fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="6">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-6.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item fresh__meat vegetables col-lg-3 col-md-4 col-sm-6 px-3" data-order="7">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-7.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item vegetables fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="8">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-8.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Crab Pool Security</h4>
+			    		<p class="featured__item__detail__price">$30.00</p>
+			    	</div>
+			    </div>
+		    </div>
+			</div>
+		</div>		
+	</section>
+
+	<!-- FEATURES -->
+
+
+	
+
 	<!-- SCRIPT -->
 	<script src="asset/dist/jquery.min.js"></script>
 	<script src="asset/dist/owl.carousel.min.js"></script>
