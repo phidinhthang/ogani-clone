@@ -604,3 +604,56 @@ a {
 }
 
 // FEATURED
+
+// BANNER PICTURE
+
+.banner__picture {
+	img {
+		max-width:100%;
+	}
+}
+
+// BANNER PICTURE
+
+
+// LASTEST PRODUCT
+
+.lastest-product {
+	h4 {
+		font-family:Cairo, sans-serif;
+		font-weight:900;
+		font-size:24px;
+	}
+	.owl-carousel {
+		position:relative;
+		.owl-control-prev, .owl-control-next {
+			position:absolute;
+			top:-16%;
+			left:initial;
+			padding:10px;
+		}
+		.owl-control-prev {
+			right:12%;
+		}
+		.owl-control-next {
+			right:0;
+		}
+	}
+	&__item {
+		display:flex;
+		&__content {
+			h5 {
+				font-weight:400;
+				font-size:15px;
+				margin-top:15px;
+				margin-bottom:15px;
+			}
+			p {
+				font-weight:800;
+
+			}
+		}
+	}
+}
+
+// LASTEST PRODUCT

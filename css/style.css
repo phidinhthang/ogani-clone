@@ -456,3 +456,33 @@ a {
       font-weight: 800;
       margin-top: 5px;
       letter-spacing: 1px; }
+
+.banner__picture img {
+  max-width: 100%; }
+
+.lastest-product h4 {
+  font-family: Cairo, sans-serif;
+  font-weight: 900;
+  font-size: 24px; }
+
+.lastest-product .owl-carousel {
+  position: relative; }
+  .lastest-product .owl-carousel .owl-control-prev, .lastest-product .owl-carousel .owl-control-next {
+    position: absolute;
+    top: -16%;
+    left: initial;
+    padding: 10px; }
+  .lastest-product .owl-carousel .owl-control-prev {
+    right: 12%; }
+  .lastest-product .owl-carousel .owl-control-next {
+    right: 0; }
+
+.lastest-product__item {
+  display: flex; }
+  .lastest-product__item__content h5 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .lastest-product__item__content p {
+    font-weight: 800; }

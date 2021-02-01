@@ -74,10 +74,11 @@ const initialSlickNav = () => {
 }
 
 const initialCarousel = () => {
-  	$(".owl-carousel").owlCarousel({
+  	$(".categories .owl-carousel").owlCarousel({
   		loop:true,
 	    nav:true,
-	    autoPlay: 3000,
+	    autoplay:true,
+	    autoplaySpeed:1500,
 	    items:1,
 	    dots:false,
 	    navText:["<button class='owl-control-prev'><i class='fa fa-chevron-left'></i></button>","<button class='owl-control-next'><i class='fa fa-chevron-right'></i></button>"],
@@ -95,6 +96,15 @@ const initialCarousel = () => {
             loop:true  
         }
       }
+  	});
+  	$(".lastest-product .owl-carousel").owlCarousel({
+  		loop:true,
+	    nav:true,
+	    autoplay:true,
+	    autoplaySpeed:1500,
+	    items:1,
+	    dots:false,
+	    navText:["<button class='owl-control-prev'><i class='fa fa-chevron-left'></i></button>","<button class='owl-control-next'><i class='fa fa-chevron-right'></i></button>"],
   	});
 }
 
