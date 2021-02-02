@@ -7,6 +7,8 @@ const setup = () => {
 	initialCarousel();
 	initialMixItUp();
 	toggleButtonFilter();
+	handleLocalStorage();
+	$('[data-id="amount"]').text('1');
 }
 $(document).ready(setup);
 
@@ -125,4 +127,19 @@ const toggleButtonFilter = () => {
 		$('.featured__list__control__group button').removeClass('active');
 		$(e.target).addClass('active');
 	})
+}
+
+
+
+const handleLocalStorage = () => {
+	let allProducts = getProducts() ? getProducts() : initialLocalStorage();
+	console.log(allProducts.length);
+	console.log($('#amountOfAllProducts'));
+}
+const initialLocalStorage = () => {
+	localStorage.setItem('allProducts','[]');
+	return getProducts();
+}
+const getProducts = () => {
+	return JSON.parse(localStorage.getItem('allProducts'));
 }

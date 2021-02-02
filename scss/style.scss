@@ -151,9 +151,45 @@ a {
 				letter-spacing: 3px;
 				transition:$transition;
 				&.active, &:hover {
-					a {
+					> a {
 						color:$green;
 						transition:$transition;
+					}
+				}
+			}
+			&__dropdown {
+				position:relative;
+				&:hover > ul{
+							visibility:visible;
+						opacity:1;
+						transform: translateY(0px);
+					}
+				&__menu {
+					position:absolute;
+					flex-direction: column;
+					top:110%;
+					left:0;
+					z-index: 1000;
+					width:300%;
+					white-space: nowrap;
+					background-color: black;
+					padding:10px;
+					visibility: hidden;
+					opacity:0;
+					transform: translateY(100px);
+					transition:visibility 0s, opacity .3s, transform .3s;
+					
+					> li {
+						&:hover a {
+							color:$green;
+						}
+					}
+					a {
+						color:white;
+						font-family: 'Open Sans',sans-serif;
+						font-weight:normal;
+						text-transform: none;
+						font-size:13px;
 					}
 				}
 			}
@@ -324,7 +360,7 @@ a {
 		border:1px solid #eee;
 
 		> li {
-			padding:7px 10px;
+			padding:10px;
 			font-size:15px; 
 			> a {
 				color:#444;
@@ -704,6 +740,89 @@ a {
 
 .footer {
 	background-color:$light;
+	margin-top:80px;
+	&__bordered {
+		border-bottom:1px solid #e1e1e1;
+	}
+	&__contact {
+		&__content {
+			li {
+				margin-top:15px;
+				font-size:14px;
+			}
+		}
+	}
+	&__links {
+		h5 {
+			@extend %h5_footer;
+		}
+		&__group {
+			display:flex;
+			> ul {
+				flex-basis: 50%;
+				font-size:13px;
+				> li {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	&__newsletter {
+		h5 {
+			@extend %h5_footer;
+		}
+		p {
+			font-size:13px;
+		}
+		@extend .banner__search;
+		form {
+			background:white;
+			margin-top:25px;
+			button {
+				width:25%;
+			}
+		}
+		&__icon {
+			display:flex;
+			justify-content: space-between;
+			margin-top:30px;
+			width:60%;
+			> li {
+				border-radius:50%;
+				background:white;
+				width:40px;
+				height:40px;
+				text-align: center;
+				border:2px solid $light;
+				transition:all .3s ease;
+				&:hover {
+					background:$green;
+					border-color:$green;
+					> a {
+						color:white;
+					}
+				}
+				i {
+					line-height:37px;
+				}
+			}
+		}
+	}
+	&__copyright {
+		color:#666;
+		font-size:14px;
+		a {
+			color:#007bff;
+			&:hover {
+				color:white;
+			}
+		}
+	}
 }
 
+span.amount-all-product {
+	color:black;
+	font-size:20px;
+	text-transform: uppercase;
+}
 // FOOTER END

@@ -74,7 +74,15 @@
 					<ul class="header__bottom__nav d-none d-lg-block">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#">Shop</a></li>
-						<li><a href="#">Page</a></li>
+						<li class="header__bottom__nav__dropdown">
+							<a href="#">Page</a>
+							<ul class="header__bottom__nav__dropdown__menu">
+								<li><a href="#">Shop Details</a></li>
+								<li><a href="#">Shoping Cart</a></li>
+								<li><a href="#">Check Out</a></li>
+								<li><a href="#">Blog Details</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
@@ -111,8 +119,8 @@
 					<span class="amount">1</span>
 				</div>
 				<div>
-					<i class="fa fa-shopping-cart"></i>
-					<span class="amount">3</span>
+					<i class="fa fa-shopping-cart" data-id="asdk"></i>
+					<span class="amount amount-all-product" data-id="amount">3</span>
 				</div>
 				<div class="sidebar__menu__cart__price">
 					<p>Item: <span>$150.00</span></p>
@@ -211,7 +219,7 @@
 								</form>
 							</div>
 							<div class="col-md-3">
-								<div class="banner__search__contact">
+								<div class="banner__search__contact mt-4 mt-md-0">
 									<div class="banner__search__contact__icon">
 										<i class="fa fa-phone"></i>
 									</div>
@@ -662,12 +670,68 @@
 
 	<!-- FOOTER -->
 
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-6 col-lg-4">a</div>
-				<div class="col-12 col-sm-6 col-lg-4">a</div>
-				<div class="col-12 col-sm-6 col-lg-4">a</div>
+	<footer class="footer pb-4">
+		<div class="container pt-5">
+			<div class="row footer__bordered">
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="footer__contact">
+						<img src="asset/images/logo.webp" alt="">
+						<div class="footer__contact__content">
+							<ul>
+								<li>Address: 60-49 Road 11378 New York</li>
+								<li>Phone: +65 11.188.888</li>
+								<li>Email: hello@colorlib.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="footer__links">
+						<h5>Useful Links</h5>
+						<div class="footer__links__group">
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">About Our Shop</a></li>
+								<li><a href="#">Secure Shopping</a></li>
+								<li><a href="#">Delivery infomation</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Our Sitemap</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Who We Are</a></li>
+								<li><a href="#">Our Services</a></li>
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Innovation</a></li>
+								<li><a href="#">Testimonials</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="footer__newsletter">
+						<h5>Join Our Newsletter Now</h5>
+						<p>Get E-mail updates about our latest shop and special offers.</p>
+						<form>
+							<input type="text" placeholder="Enter your email" />
+							<button type="submit">Subscribe</button>
+						</form>
+							<ul class="footer__newsletter__icon">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-lg-9">
+						<p class="footer__copyright">Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a href="">Colorlib</a></p>
+				</div>
+				<div class="col-lg-3">
+					<img class="footer__payment" src="asset/images/payment-item.png" alt="">
+				</div>
 			</div>
 		</div>
 	</footer>
