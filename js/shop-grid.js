@@ -18,9 +18,11 @@ const setup = () => {
 	handleToggleSidebar();
 	initialSlickNav();
 	initialCarousel();
-	initialMixItUp();
+	$('select').niceSelect();
+	// initialMixItUp();
 	toggleButtonFilter();
 	handleLocalStorage();
+	initialSlider();
 }
 $(document).ready(setup);
 
@@ -88,26 +90,20 @@ const initialSlickNav = () => {
 }
 
 const initialCarousel = () => {
-  	$(".categories .owl-carousel").owlCarousel({
+  	$(".sale .owl-carousel").owlCarousel({
   		loop:true,
-	    nav:true,
 	    autoplay:true,
 	    autoplaySpeed:1500,
 	    items:1,
+	    dots:true,
 	    margin:30,
-	    dots:false,
-	    navText:["<button class='owl-control-prev'><i class='fa fa-chevron-left'></i></button>","<button class='owl-control-next'><i class='fa fa-chevron-right'></i></button>"],
 	    responsive: {
 		    576:{
 	            items:2,
 	            loop:true
 	        },
-        768:{
-            items:3,
-            loop:true
-        },
         992:{
-            items:4,
+            items:3,
             loop:true  
         }
       }
@@ -117,7 +113,6 @@ const initialCarousel = () => {
 	    nav:true,
 	    autoplay:true,
 	    autoplaySpeed:1500,
-	    margin:30,
 	    items:1,
 	    dots:false,
 	    navText:["<button class='owl-control-prev'><i class='fa fa-chevron-left'></i></button>","<button class='owl-control-next'><i class='fa fa-chevron-right'></i></button>"],
@@ -184,4 +179,26 @@ const updatePrice = () => {
 		total = (Math.round(total*100)/100).toFixed(2);
 		$('[data-id="price"]').text(`$${total}`);
 	}
+}
+
+
+const initialSlider = () => {
+	var slider = document.getElementById('slider');
+
+	noUiSlider.create(slider, {
+    start: [10, 540],
+    connect: true,
+    range: {
+        'min': 10,
+        'max': 540
+    }
+	});
+
+	slider.noUiSlider.on('update', function(values, handle) {
+		let [first,second] = slider.noUiSlider.get();
+		first = Math.round(first);
+		second = Math.round(second);
+    $(`.first`).text(`$${first}`);
+    $(`.second`).text(`$${second}`);
+	});
 }

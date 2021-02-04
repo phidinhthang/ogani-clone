@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- LINK -->
+	<!-- LINK -->
+	<link rel="stylesheet" type="text/css" href="./asset/dist/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="./asset/dist/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="./asset/dist/owl.theme.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@icon/elegant-icons/elegant-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./asset/dist/jquery-nice-select.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- LINK -->
+</head>
+<body>
+	<div class="preloader-wrapper">
+		<div class="preloader">
+			
+		</div>
+	</div>
+	<header class="header">
+		<div class="header__top d-none d-lg-block">
+			<div class="container">
+				<div class="row">
+				<ul class="header__top__items col-lg-6">
+					<li class="header__top__item">
+						<i class="fa fa-envelope"></i>
+						<p class="header__top__item__text">hello@colorlib.com</p>
+					</li>
+					<li class="header__top__item">			
+						<p class="header__top__item__text">Free Shipping for all Order of $99</p>
+					</li>
+				</ul>
+				<ul class="header__top__items col-lg-6 d-flex justify-content-end">
+					<li class="header__top__item">
+						<ul class="header__top__item__icons">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						</ul>
+					</li>
+					<li class="header__top__item header__top__item__language">						
+						<img src="asset/images/language.webp" alt="language">
+						<p>English</p>
+						<i class="fa fa-angle-down"></i>
+						<ul class="header__top__item__language__dropdown zindex-dropdown">
+							<li>
+								Spanish
+							</li>
+							<li>English</li>
+						</ul>
+					</li>
+					<li class="header__top__item">
+						<i class="fa fa-user"></i>
+						<a>Login</a>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom container">
+			<div class="row header__bottom__wrapper align-items-center h-100">
+				<div class="col-lg-3 pl-0 d-flex justify-content-between align-items-center header__bottom__wrapper__logo__group">
+						<div class="logo">
+							<img src="asset/images/logo.webp" alt="Ogani">
+						</div>
+						<button class="toggle d-block d-lg-none">
+							<i class="fa fa-bars"></i>
+						</button>
+				</div>
+				<div class="col-lg-9 d-flex justify-content-center justify-content-lg-between align-items-center">
+					<ul class="header__bottom__nav d-none d-lg-block">
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="shop-grid.html">Shop</a></li>
+						<li class="header__bottom__nav__dropdown">
+							<a href="#">Page</a>
+							<ul class="header__bottom__nav__dropdown__menu">
+								<li><a href="#">Shop Details</a></li>
+								<li><a href="#">Shoping Cart</a></li>
+								<li><a href="#">Check Out</a></li>
+								<li><a href="#">Blog Details</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<div class="header__bottom__cart">
+						<div>
+							<i class="fa fa-heart"></i>
+							<span class="amount">1</span>
+						</div>
+						<div>
+							<i class="fa fa-shopping-cart"></i>
+							<span class="amount" data-id="amount"></span>
+						</div>
+						<div class="header__bottom__cart__price">
+							<p>Item: <span data-id="price">$0</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>		
+	<!-- HEADER	 -->
+
+	<!-- SIDEBAR -->
+	<aside class="sidebar">
+		<div class="sidebar__overlay">
+		</div>
+		<div class="sidebar__menu">
+			<div class="logo">
+				<img src="asset/images/logo.webp" alt="Ogani">
+			</div>
+			<div class="sidebar__menu__cart">
+				<div>
+					<i class="fa fa-heart"></i>
+					<span class="amount">1</span>
+				</div>
+				<div>
+					<i class="fa fa-shopping-cart"></i>
+					<span class="amount" data-id="amount"></span>
+				</div>
+				<div class="sidebar__menu__cart__price">
+					<p>Item: <span data-id="price">$0</span></p>
+				</div>
+			</div>
+			<ul class="wrapper">
+				<li class="sidebar__menu__language">						
+					<img src="asset/images/language.webp" alt="language">
+					<p>English</p>
+					<i class="fa fa-angle-down"></i>
+					<ul class="sidebar__menu__language__dropdown">
+						<li>
+							Spanish
+						</li>
+						<li>English</li>
+					</ul>
+				</li>
+				<li class="sidebar__login">
+					<i class="fa fa-user"></i>
+					<a>Login</a>
+				</li>
+			</ul>
+			<ul class="sidebar__menu__dropdown">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li id="sub__dropdown">
+					<a href="#">Pages <span class="slicknav_arrow">►</span></a>
+					
+				</li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<ul class="sidebar__icon">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+			</ul>
+			<div class="sidebar__email">
+				<i class="fa fa-envelope"></i>
+				<p>hello@colorlib.com</p>
+			</div>
+			<div class="sidebar__detail">			
+				<p>Free Shipping for all Order of $99</p>
+			</div>
+		</div>
+	</aside>
+
+	<!-- SIDEBAR -->
+
+	<!-- SUB_DROPDOWN_MENU -->
+	<ul id="sub__dropdown__menu" style="display:none">
+		<li><a href="#">Shop Details</a></li>
+		<li><a href="#">Shopping Cart</a></li>
+		<li><a href="#">Check Out</a></li>
+		<li><a href="#">Blog Details</a></li>
+	</ul>
+	<!-- SUB_DROPDOWN_MENU -->
+
+
+	<!-- BANNER_CATEGORY_LIST -->
+	<ul id="banner__categories__list">
+		<li><a href="">Fresh Meat</a></li>
+		<li><a href="">Vegetables</a></li>
+		<li><a href="">Fruit & Nut Gifts</a></li>
+		<li><a href="">Fresh Berries</a></li>
+		<li><a href="">Ocean Foods</a></li>
+		<li><a href="">Butter & Eggs</a></li>
+		<li><a href="">Fastfood</a></li>
+		<li><a href="">Fresh Onion</a></li>
+		<li><a href="">Papayaya & Crisps</a></li>
+		<li><a href="">Oatmeal</a></li>
+		<li><a href="">Fresh Bananas</a></li>
+	</ul>
+	<!-- BANNER_CATEGORY_LIST -->
+
+	<!-- BANNER -->
+	<section class="banner container">
+			<div class="row">
+				<div class="col-lg-3 pl-0">
+					<div class="banner__categories" id="banner__categories">
+						<div class="banner__categories__label" id="banner__categories__label">
+							<a href="#"><i class="fa fa-bars"></i> All departments <i class="fa fa-angle-down"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 pr-lg-0 pl-sm-0 pl-lg-3">
+						<div class="banner__search row  mt-4 mt-lg-0">
+							<div class="col-md-9">
+								<form>
+									<div class="banner__search__categories d-none d-md-block">
+										<span>All categories</span><i class="fa fa-angle-down"></i>
+									</div>
+									<input type="text" placeholder="What do you need ?">
+									<button type="submit">Search</button>
+								</form>
+							</div>
+							<div class="col-md-3">
+								<div class="banner__search__contact mt-4 mt-md-0">
+									<div class="banner__search__contact__icon">
+										<i class="fa fa-phone"></i>
+									</div>
+									<div class="banner__search__contact__text">
+										<p class="banner__search__contact__text__phone">+65 11.188.888</p>
+										<p class="banner__search__contact__text__content">support 24/7 time</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- SAME HEADER IN ALL THE PAGES  -->
+				</div>
+			</div>
+	</section>
+
+	<section class="breadcrumb my-5">
+		<div class="container">
+			<h1>Shopping Cart</h1>
+			<small><span>Home-</span> Shopping Cart</small>
+		</div>
+	</section>
+
+	<section class="shopping-cart">
+		<div class="container shopping-cart__wrapper">
+			<div class="row shopping-cart__header pb-3">
+				<div class="col-4 col-md-6">
+					<h4>Products</h4>
+				</div>
+				<div class="col-8 col-md-6 ">
+					<div class="row">
+						<div class="col-3 col-lg-4"><h4 class="d-flex justify-content-center">Price</h4></div>
+						<div class="col-6 col-lg-4"><h4 class="d-flex justify-content-center">Quantity</h4></div>
+						<div class="col-3 col-lg-4"><h4 class="d-flex justify-content-center">Total</h4></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-sm-6 mb-3 d-flex justify-content-center justify-content-sm-start">
+					<button class="cart-btn"><a href="shop-grid.html">Continue Shopping</a></button>
+				</div>
+				<div class="col-sm-6 mb-3 d-flex justify-content-center justify-content-sm-end">
+					<button class="cart-btn" data-update="cart">Update Cart</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row mt-4">
+				<div class="col-lg-6 discount__section">
+							<h4 class="mb-3">Discount Codes</h4>
+					<div class="row">
+						<div class="col-sm-6 mb-3">
+							<input type="text" placeholder="Enter your coupon code" />
+						</div>
+						<div class="col-sm-6 mb-3">
+							<button>Apply Coupon</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-3 mt-3">
+					<div class="cart-checkout p-4">
+						<h4 class="mb-4">Cart Total</h4>
+						<div class="cart-checkout__subtotal d-flex justify-content-between pb-2">
+							<h5>Sub Total</h5>
+							<span>$454.98</span>
+						</div>
+						<div class="cart-checkout__total d-flex justify-content-between mt-3">
+							<h5>Sub Total</h5>
+							<span>$454.98</span>
+						</div>
+						<button class="cart-checkout__btn mt-4">PROCEED TO CHECKOUT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer pb-4">
+		<div class="container pt-5">
+			<div class="row footer__bordered">
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="footer__contact">
+						<img src="asset/images/logo.webp" alt="">
+						<div class="footer__contact__content">
+							<ul>
+								<li>Address: 60-49 Road 11378 New York</li>
+								<li>Phone: +65 11.188.888</li>
+								<li>Email: hello@colorlib.com</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="footer__links">
+						<h5>Useful Links</h5>
+						<div class="footer__links__group">
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">About Our Shop</a></li>
+								<li><a href="#">Secure Shopping</a></li>
+								<li><a href="#">Delivery infomation</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Our Sitemap</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Who We Are</a></li>
+								<li><a href="#">Our Services</a></li>
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Innovation</a></li>
+								<li><a href="#">Testimonials</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 mb-4">
+					<div class="footer__newsletter">
+						<h5>Join Our Newsletter Now</h5>
+						<p>Get E-mail updates about our latest shop and special offers.</p>
+						<form>
+							<input type="text" placeholder="Enter your email" />
+							<button type="submit">Subscribe</button>
+						</form>
+							<ul class="footer__newsletter__icon">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-lg-9">
+						<p class="footer__copyright">Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a href="">Colorlib</a></p>
+				</div>
+				<div class="col-lg-3">
+					<img class="footer__payment" src="asset/images/payment-item.png" alt="">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- FOOTER -->
+
+
+	<!-- SCRIPT -->
+	<script src="asset/dist/jquery.min.js"></script>
+	<script src="asset/dist/owl.carousel.min.js"></script>
+	<script src="asset/dist/jquery-nice-select.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+	<script src="asset/dist/mixitup.min.js"></script>
+	<script src="asset/dist/jquery.slicknav.min.js"></script>
+	<script src="./js/shopping-cart.js"></script>
+	<!-- SCRIPT -->
+</body>
+</html>

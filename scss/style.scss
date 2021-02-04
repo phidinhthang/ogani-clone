@@ -1,6 +1,9 @@
 @import 'variable';
 @import 'breakpoint.scss';
 @import 'util.scss';
+@import 'shop-grid.scss';
+@import 'shopping-cart.scss';
+
 
 html {
 	font-family: 'Open Sans', sans-serif;
@@ -36,6 +39,46 @@ a {
 	cursor: pointer;
 	font-family: 'Open Sans', sans-serif;
 }
+
+// PRELOADER
+
+.preloader-wrapper {
+	z-index:99999;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:black;
+	.preloader {
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%) rotate(0deg);
+		width:60px;
+		height:60px;
+		border:3px solid rgba(255,255,255,0.3);
+		border-top-color:white;
+		border-radius: 50%;
+		animation:spin 1s infinite linear;
+		transform-origin: 50% 50%;
+	}
+	transition:opacity .5s ease-in-out;
+}
+
+.preloader-finish {
+	opacity:0;
+	pointer-events: none;
+}
+
+@keyframes spin {
+	to {
+		transform: translate(-50%,-50%) rotate(360deg);
+	}
+}
+
+
+// PRELOADER
 
 // HEADER
 
@@ -167,7 +210,7 @@ a {
 				&__menu {
 					position:absolute;
 					flex-direction: column;
-					top:110%;
+					top:100%;
 					left:0;
 					z-index: 1000;
 					width:300%;
@@ -493,9 +536,9 @@ a {
 	img {
 		width:100%;
 	}
-	& {
-		margin:0 15px;
-	}
+	// & {
+	// 	margin:0 15px;
+	// }
 }
 
 .product__item__name {
@@ -596,6 +639,7 @@ a {
 			line-height:35px;
 			border:2px solid #eee;
 			transition:all .3s ease-in-out;
+			cursor: pointer;
 			&:hover {
 				border-color:$green;
 				background-color:$green;

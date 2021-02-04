@@ -4,10 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+
+	<!-- LINK -->
 	<!-- LINK -->
 	<link rel="stylesheet" type="text/css" href="./asset/dist/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="./asset/dist/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="./asset/dist/owl.theme.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@icon/elegant-icons/elegant-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css"/>
 	<link rel="stylesheet" type="text/css" href="./asset/dist/jquery-nice-select.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -15,6 +20,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<!-- LINK -->
 </head>
 <body>
@@ -23,7 +29,6 @@
 			
 		</div>
 	</div>
-	<!-- HEADER -->
 	<header class="header">
 		<div class="header__top d-none d-lg-block">
 			<div class="container">
@@ -77,8 +82,8 @@
 				</div>
 				<div class="col-lg-9 d-flex justify-content-center justify-content-lg-between align-items-center">
 					<ul class="header__bottom__nav d-none d-lg-block">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="shop-grid.html">Shop</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="#">Shop</a></li>
 						<li class="header__bottom__nav__dropdown">
 							<a href="#">Page</a>
 							<ul class="header__bottom__nav__dropdown__menu">
@@ -150,7 +155,7 @@
 			</ul>
 			<ul class="sidebar__menu__dropdown">
 				<li class="active"><a href="#">Home</a></li>
-				<li><a href="shop-grid.html">Shop</a></li>
+				<li><a href="#">Shop</a></li>
 				<li id="sub__dropdown">
 					<a href="#">Pages <span class="slicknav_arrow">►</span></a>
 					
@@ -216,7 +221,7 @@
 						<div class="banner__search row  mt-4 mt-lg-0">
 							<div class="col-md-9">
 								<form>
-									<div class="banner__search__categories">
+									<div class="banner__search__categories d-none d-md-block">
 										<span>All categories</span><i class="fa fa-angle-down"></i>
 									</div>
 									<input type="text" placeholder="What do you need ?">
@@ -236,68 +241,238 @@
 							</div>
 						</div>
 						<!-- SAME HEADER IN ALL THE PAGES  -->
-						<div class="banner__image">
-							<div class="banner__image__content">
-								<small>FRUIT FRESH</small>
-								<h1>Vegetable</h1>
-								<h2>100% Organic</h2>
-								<p>Free Pickup and Delivery Available</p>
-								<button>Shop Now</button>
-							</div>
-						</div>
 				</div>
 			</div>
 	</section>
 
-	<!-- BANNER -->
-
-	<!-- CATEGORIES -->
-
-	<section class="categories mt-5">
-		<div class="container px-0">
-			<div class="owl-carousel owl-theme position-relative">
-		    <div class="product__item">
-		    	<img src="asset/images/cat-1.webp" alt="">
-		    	<h4 class="product__item__name">Fresh Fruit</h4>
-		    </div>
-		    <div class="product__item">
-		    	<img src="asset/images/cat-2.webp" alt="">
-		    	<h4 class="product__item__name">Dried Fruit</h4>
-		    </div>
-		    <div class="product__item">
-		    	<img src="asset/images/cat-3.webp" alt="">
-		    	<h4 class="product__item__name">Vegetables</h4>
-		    </div>
-		    <div class="product__item">
-		    	<img src="asset/images/cat-4.webp" alt="">
-		    	<h4 class="product__item__name">Drink Fruits</h4>
-		    </div>
-		    <div class="product__item">
-		    	<img src="asset/images/cat-5.webp" alt="">
-		    	<h4 class="product__item__name">Drink Fruits</h4>
-		    </div>
-			</div>
-		</div>
-	</section>			
-	<!-- CATEGORIES -->
-
-	<!-- FEATURES -->
-
-	<section class="featured">
+	<section class="breadcrumb my-5">
 		<div class="container">
-			<h4 class="featured__header">Featured Product
-				<div class="divider"></div>
-			</h4>
-			<div class="featured__list">
-				<div class="featured__list__control__group">
-			    <button type="button" data-filter="all" class="active">All</button>
-					<button type="button" data-filter=".orange">Oranges</button>
-					<button type="button" data-filter=".fresh__meat">Fresh Meat</button>
-					<button type="button" data-filter=".vegetables">Vegetables</button>
-					<button type="button" data-filter=".fastfood">Fastfood</button>
+			<h1>Organi Shop</h1>
+			<small><span>Home-</span> Shop</small>
+		</div>
+	</section>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-5 mb-4">
+				<ul class="aside__content__nav mt-3">
+					<h4>Department</h4>
+					<li><a href="#">Fresh Meat</a></li>
+					<li><a href="#">Vegetables</a></li>
+					<li><a href="#">Fruit & Nut Gifts</a></li>
+					<li><a href="#">Fresh Berries</a></li>
+					<li><a href="#">Ocean Foods</a></li>
+					<li><a href="#">Butter & Eggs</a></li>
+					<li><a href="#">Fastfood</a></li>
+					<li><a href="#">Fresh Onion</a></li>
+					<li><a href="#">Papayaya & Crisps</a></li>
+					<li><a href="#">Oatmeal</a></li>
+				</ul>
+				<div class="aside__price__filter my-4">
+					<h4 class="mb-3">Price</h4>
+					<div id="slider"></div>
+					<ul class="mt-3">
+						<li class="first">$10</li>
+						<span>-</span>
+						<li class="second">$540</li>
+					</ul>
 				</div>
-				<div class="featured__list__item__container row px-0 mt-5">
-			    <div class="mix featured__list__item orange fresh__meat col-lg-3 col-md-4 col-sm-6 px-3" data-order="1">
+				<div class="aside__color__filter">
+					<h4 class="mb-3">Colors</h4>
+					<div>
+						<ul>
+							<li><span class="aside__color__filter--white"></span>White</li>
+							<li><span class="aside__color__filter--red"></span>Red</li>
+							<li><span class="aside__color__filter--blue"></span>Blue</li>
+						</ul>
+						<ul>
+							<li><span class="aside__color__filter--gray"></span>Gray</li>
+							<li><span class="aside__color__filter--black"></span>Black</li>
+							<li><span class="aside__color__filter--green"></span>Green</li>
+						</ul>
+					</div>
+				</div>
+				<div class="aside__size__product">
+					<h4 class="mb-3 mt-3">Popular Size</h4>
+					<div class="mb-2"><button class="mr-3">Large</button><button>Medium</button></div>
+					<div class="mb-2"><button class="mr-3">Small</button><button>Tiny</button></div>
+				</div>
+				<div class="aside__lastest-product lastest-product mt-5">
+					<div >
+						<h4 class="mb-5">Lastest Products</h4>
+						<div class="owl-carousel owl-theme mb-3">
+	    				<div class="item">
+	    					<div class="lastest-product__item mb-3">
+	    						<div class="lastest-product__item__img mr-4">
+		    						<img src="./asset/images/lp-1.webp" alt="">
+		    					</div>
+	    						<div class="lastest-product__item__content">
+	    							<h5>Crab Pool Security</h5>
+	    							<p>$30.00</p>
+	    						</div>
+	    					</div>
+	    					<div class="lastest-product__item mb-3">
+	    						<div class="lastest-product__item__img mr-4">
+		    						<img src="./asset/images/lp-2.webp" alt="">
+		    					</div>
+	    						<div class="lastest-product__item__content">
+	    							<h5>Crab Pool Security</h5>
+	    							<p>$30.00</p>
+	    						</div>
+	    					</div>
+	    					<div class="lastest-product__item mb-3">
+	    						<div class="lastest-product__item__img mr-4">
+		    						<img src="./asset/images/lp-3.webp" alt="">
+		    					</div>
+	    						<div class="lastest-product__item__content">
+	    							<h5>Crab Pool Security</h5>
+	    							<p>$30.00</p>
+	    						</div>
+	    					</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="lastest-product__item mb-3">
+	    						<div class="lastest-product__item__img mr-4">
+		    						<img src="./asset/images/lp-1.webp" alt="">
+		    					</div>
+	    						<div class="lastest-product__item__content">
+	    							<h5>Crab Pool Security</h5>
+	    							<p>$30.00</p>
+	    						</div>
+	    					</div>
+	    					<div class="lastest-product__item mb-3">
+	    						<div class="lastest-product__item__img mr-4">
+		    						<img src="./asset/images/lp-2.webp" alt="">
+		    					</div>
+	    						<div class="lastest-product__item__content">
+	    							<h5>Crab Pool Security</h5>
+	    							<p>$30.00</p>
+	    						</div>
+	    					</div>
+	    					<div class="lastest-product__item mb-3">
+	    						<div class="lastest-product__item__img mr-4">
+		    						<img src="./asset/images/lp-3.webp" alt="">
+		    					</div>
+	    						<div class="lastest-product__item__content">
+	    							<h5>Crab Pool Security</h5>
+	    							<p>$30.00</p>
+	    						</div>
+	    					</div>
+	    				</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="col-lg-9 col-md-7">
+				<div class="sale">
+					<h2 class="sale__header mb-5">
+						Sale Off
+					</h2>
+					<div class="owl-carousel owl-theme mt-5">
+				   <div class="item featured__list__item">
+			    	<div class="featured__card">
+			    		<img src="asset/images/pd-1.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Fruit and More</h4>
+			    		<p class="featured__item__detail__price">$23.54</p>
+			    	</div>
+			    </div>
+			    <div class="item featured__list__item">
+			    	<div class="featured__card">
+			    		<img src="asset/images/pd-2.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Vegetable Package</h4>
+			    		<p class="featured__item__detail__price">$85.32</p>
+			    	</div>
+			    </div>
+			    <div class="item featured__list__item">
+			    	<div class="featured__card">
+			    		<img src="asset/images/pd-3.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Milk</h4>
+			    		<p class="featured__item__detail__price">$65.55</p>
+			    	</div>
+			    </div>
+			    <div class="item featured__list__item">
+			    	<div class="featured__card">
+			    		<img src="asset/images/pd-4.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Mango</h4>
+			    		<p class="featured__item__detail__price">$130.00</p>
+			    	</div>
+			    </div>
+			    <div class="item featured__list__item">
+			    	<div class="featured__card">
+			    		<img src="asset/images/pd-5.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Banana</h4>
+			    		<p class="featured__item__detail__price">$42.45</p>
+			    	</div>
+			    </div>
+			    <div class="item featured__list__item">
+			    	<div class="featured__card">
+			    		<img src="asset/images/pd-6.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Banana</h4>
+			    		<p class="featured__item__detail__price">$42.45</p>
+			    	</div>
+			    </div>
+					</div>
+				</div>
+				<div class="row filter-product my-4">
+					<div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center">
+						<span class="mr-2 filter-product__tittle">Sort By</span>
+						<select>
+							<option value="1">Default</option>
+							<option value="2">Default</option>
+						</select>
+					</div>
+					<div class="col-md-4 d-flex justify-content-center filter-product__result mb-3 mb-md-0">
+						<span>16 </span><p> Products found</p>
+					</div>
+					<div class="col-md-4 filter-product__icon d-flex align-items-center justify-content-center justify-content-md-end">
+						<span class="ei-icon_grid-2x2 mr-3"></span>
+						<span class="ei-icon_ul"></span>
+					</div>
+				</div>
+				<div class="row sale-all-product">
+					<div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
 			    	<div class="featured__card">
 			    		<img src="asset/images/feature-1.webp" alt="">
 			    		<div class="featured__icon__group">
@@ -311,7 +486,7 @@
 			    		<p class="featured__item__detail__price">$12.34</p>
 			    	</div>
 			    </div>
-			    <div class="mix featured__list__item vegetables fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="2">
+					<div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
 			    	<div class="featured__card">
 			    		<img src="asset/images/feature-2.webp" alt="">
 			    		<div class="featured__icon__group">
@@ -325,7 +500,7 @@
 			    		<p class="featured__item__detail__price">$42.45</p>
 			    	</div>
 			    </div>
-			    <div class="mix featured__list__item fresh__meat vegetables col-lg-3 col-md-4 col-sm-6 px-3" data-order="3">
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
 			    	<div class="featured__card">
 			    		<img src="asset/images/feature-3.webp" alt="">
 			    		<div class="featured__icon__group">
@@ -339,21 +514,7 @@
 			    		<p class="featured__item__detail__price">$332.12</p>
 			    	</div>
 			    </div>
-			    <div class="mix featured__list__item orange fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="4">
-			    	<div class="featured__card">
-			    		<img src="asset/images/feature-4.webp" alt="">
-			    		<div class="featured__icon__group">
-			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
-			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
-			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
-			    		</div>
-			    	</div>
-			    	<div class="featured__item__detail">
-			    		<h4 class="featured__item__detail__name">Watermelon</h4>
-			    		<p class="featured__item__detail__price">$35.00</p>
-			    	</div>
-			    </div>
-			    <div class="mix featured__list__item fresh__meat vegetables col-lg-3 col-md-4 col-sm-6 px-3" data-order="5">
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
 			    	<div class="featured__card">
 			    		<img src="asset/images/feature-5.webp" alt="">
 			    		<div class="featured__icon__group">
@@ -367,7 +528,7 @@
 			    		<p class="featured__item__detail__price">$40.00</p>
 			    	</div>
 			    </div>
-			    <div class="mix featured__list__item orange fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="6">
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
 			    	<div class="featured__card">
 			    		<img src="asset/images/feature-6.webp" alt="">
 			    		<div class="featured__icon__group">
@@ -381,7 +542,7 @@
 			    		<p class="featured__item__detail__price">$42.42</p>
 			    	</div>
 			    </div>
-			    <div class="mix featured__list__item fresh__meat vegetables col-lg-3 col-md-4 col-sm-6 px-3" data-order="7">
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
 			    	<div class="featured__card">
 			    		<img src="asset/images/feature-7.webp" alt="">
 			    		<div class="featured__icon__group">
@@ -395,7 +556,21 @@
 			    		<p class="featured__item__detail__price">$130.00</p>
 			    	</div>
 			    </div>
-			    <div class="mix featured__list__item vegetables fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="8">
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-4.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Watermelon</h4>
+			    		<p class="featured__item__detail__price">$35.00</p>
+			    	</div>
+			    </div>
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
 			    	<div class="featured__card">
 			    		<img src="asset/images/feature-8.webp" alt="">
 			    		<div class="featured__icon__group">
@@ -409,271 +584,72 @@
 			    		<p class="featured__item__detail__price">$100.00</p>
 			    	</div>
 			    </div>
-		    </div>
-			</div>
-		</div>		
-	</section>
-
-	<!-- FEATURES -->
-
-	<!-- BANNER PICTURE -->
-
-	<section class="container my-4">
-		<div class="row">
-			<div class="col-sm-6 banner__picture">
-				<img src="./asset/images/banner-1.webp" alt="">
-			</div>
-			<div class="col-sm-6 banner__picture">
-				<img src="./asset/images/banner-2.webp" alt="">
-			</div>
-		</div>
-	</section>
-
-	<!-- BANNER PICTURE -->
-
-	<!-- LASTEST PRODUCT -->
-
-	<section class="lastest-product mt-5 mb">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<h4 class="mb-5">Lastest Products</h4>
-					<div class="owl-carousel owl-theme mb-3">
-    				<div class="item">
-    					<div class="lastest-product__item mb-3">
-    						<div class="lastest-product__item__img mr-4">
-	    						<img src="./asset/images/lp-1.webp" alt="">
-	    					</div>
-    						<div class="lastest-product__item__content">
-    							<h5>Crab Pool Security</h5>
-    							<p>$30.00</p>
-    						</div>
-    					</div>
-    					<div class="lastest-product__item mb-3">
-    						<div class="lastest-product__item__img mr-4">
-	    						<img src="./asset/images/lp-2.webp" alt="">
-	    					</div>
-    						<div class="lastest-product__item__content">
-    							<h5>Crab Pool Security</h5>
-    							<p>$30.00</p>
-    						</div>
-    					</div>
-    					<div class="lastest-product__item mb-3">
-    						<div class="lastest-product__item__img mr-4">
-	    						<img src="./asset/images/lp-3.webp" alt="">
-	    					</div>
-    						<div class="lastest-product__item__content">
-    							<h5>Crab Pool Security</h5>
-    							<p>$30.00</p>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="item">
-    					<div class="lastest-product__item mb-3">
-    						<div class="lastest-product__item__img mr-4">
-	    						<img src="./asset/images/lp-1.webp" alt="">
-	    					</div>
-    						<div class="lastest-product__item__content">
-    							<h5>Crab Pool Security</h5>
-    							<p>$30.00</p>
-    						</div>
-    					</div>
-    					<div class="lastest-product__item mb-3">
-    						<div class="lastest-product__item__img mr-4">
-	    						<img src="./asset/images/lp-2.webp" alt="">
-	    					</div>
-    						<div class="lastest-product__item__content">
-    							<h5>Crab Pool Security</h5>
-    							<p>$30.00</p>
-    						</div>
-    					</div>
-    					<div class="lastest-product__item mb-3">
-    						<div class="lastest-product__item__img mr-4">
-	    						<img src="./asset/images/lp-3.webp" alt="">
-	    					</div>
-    						<div class="lastest-product__item__content">
-    							<h5>Crab Pool Security</h5>
-    							<p>$30.00</p>
-    						</div>
-    					</div>
-    				</div>
-					</div>
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
+			    	<div class="featured__card">
+			    		<img src="asset/images/product-9.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Sliwki</h4>
+			    		<p class="featured__item__detail__price">$85.20</p>
+			    	</div>
+			    </div>
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
+			    	<div class="featured__card">
+			    		<img src="asset/images/product-10.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Chicken</h4>
+			    		<p class="featured__item__detail__price">$33.66</p>
+			    	</div>
+			    </div>
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
+			    	<div class="featured__card">
+			    		<img src="asset/images/product-11.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Tropicana</h4>
+			    		<p class="featured__item__detail__price">$221.23</p>
+			    	</div>
+			    </div>
+			    <div class="featured__list__item col-lg-4 col-sm-6 px-3" data-order="1">
+			    	<div class="featured__card">
+			    		<img src="asset/images/product-12.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Fruit</h4>
+			    		<p class="featured__item__detail__price">$250.00</p>
+			    	</div>
+			    </div>
 				</div>
-				<div class="col-lg-4 col-md-6">
-					<h4 class="mb-5">Top Rated Products</h4>
-					<div class="owl-carousel owl-theme mb-3">
-				    <div class="item">
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-1.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-2.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-3.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    </div>
-				    <div class="item">
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-1.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-2.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-3.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    </div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<h4 class="mb-5">Review Products</h4>
-					<div class="owl-carousel owl-theme mb-3">
-				    <div class="item">
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-1.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-2.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-3.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    </div>
-				    <div class="item">
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-1.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-2.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    	<div class="lastest-product__item mb-3">
-				    		<div class="lastest-product__item__img mr-4">
-					    		<img src="./asset/images/lp-3.webp" alt="">
-					    	</div>
-				    		<div class="lastest-product__item__content">
-				    			<h5>Crab Pool Security</h5>
-				    			<p>$30.00</p>
-				    		</div>
-				    	</div>
-				    </div>
-				   </div>
-				</div>
-				</div>
+				<ul class="product__pagination">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#"><i class="fa fa-long-arrow-right"></i></a></li>
+				</ul>
 			</div>
 		</div>
-	</section>
-
-
-	<!-- LASTEST PRODUCT -->
-
-	<section class="blog">
-		<div class="container">
-			<h4 class="blog__header mb-5">From The Blog
-				<div class="divider"></div>
-			</h4>
-			<div class="blog__group row">
-				<div class="blog__group__card col-12 col-md-4 col-sm-6">
-					<div class="blog__group__card__img">
-						<img src="./asset/images/blog-1.webp" alt="">
-					</div>
-					<div class="blog__group__card__content">
-						<p class="blog__group__card__content__small"><i class="fa fa-calendar"></i> May 4,2019 <i class="fa fa-comment-o"></i> 5</p>
-						<h5>Cooking tips make cooking simple</h5>
-						<p class="blog__group__card__content__text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
-					</div>
-				</div>
-				<div class="blog__group__card col-12 col-md-4 col-sm-6">
-					<div class="blog__group__card__img">
-						<img src="./asset/images/blog-2.webp" alt="">
-					</div>
-					<div class="blog__group__card__content">
-						<p class="blog__group__card__content__small"><i class="fa fa-calendar"></i> May 4,2019 <i class="fa fa-comment-o"></i> 5</p>
-						<h5>Cooking tips make cooking simple</h5>
-						<p class="blog__group__card__content__text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
-					</div>
-				</div>
-				<div class="blog__group__card col-12 col-md-4 col-sm-6">
-					<div class="blog__group__card__img">
-						<img src="./asset/images/blog-3.webp" alt="">
-					</div>
-					<div class="blog__group__card__content">
-						<p class="blog__group__card__content__small"><i class="fa fa-calendar"></i> May 4,2019 <i class="fa fa-comment-o"></i> 5</p>
-						<h5>Cooking tips make cooking simple</h5>
-						<p class="blog__group__card__content__text">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- FOOTER -->
+	</div>
 
 	<footer class="footer pb-4">
 		<div class="container pt-5">
@@ -748,9 +724,10 @@
 	<script src="asset/dist/jquery.min.js"></script>
 	<script src="asset/dist/owl.carousel.min.js"></script>
 	<script src="asset/dist/jquery-nice-select.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 	<script src="asset/dist/mixitup.min.js"></script>
 	<script src="asset/dist/jquery.slicknav.min.js"></script>
-	<script src="./js/index.js"></script>
+	<script src="./js/shop-grid.js"></script>
 	<!-- SCRIPT -->
 </body>
 </html>
