@@ -88,7 +88,7 @@
 							<a href="#">Page</a>
 							<ul class="header__bottom__nav__dropdown__menu">
 								<li><a href="shop-details.html">Shop Details</a></li>
-								<li><a href="#">Shoping Cart</a></li>
+								<li><a href="shopping-cart.html">Shoping Cart</a></li>
 								<li><a href="#">Check Out</a></li>
 								<li><a href="#">Blog Details</a></li>
 							</ul>
@@ -183,8 +183,8 @@
 
 	<!-- SUB_DROPDOWN_MENU -->
 	<ul id="sub__dropdown__menu" style="display:none">
-		<li><a href="#">Shop Details</a></li>
-		<li><a href="#">Shopping Cart</a></li>
+		<li><a href="shop-details.html">Shop Details</a></li>
+		<li><a href="shopping-cart.html">Shopping Cart</a></li>
 		<li><a href="#">Check Out</a></li>
 		<li><a href="#">Blog Details</a></li>
 	</ul>
@@ -245,67 +245,185 @@
 			</div>
 	</section>
 
+
 	<section class="breadcrumb my-5">
 		<div class="container">
-			<h1>Shopping Cart</h1>
-			<small><span>Home-</span> Shopping Cart</small>
+			<h1>Vegetable’s Package</h1>
+			<small><span>Home-</span><span> Vegetables-</span> Vegetable’s Package</small>
 		</div>
 	</section>
 
-	<section class="shopping-cart">
-		<div class="container shopping-cart__wrapper">
-			<div class="row shopping-cart__header pb-3">
-				<div class="col-4 col-md-6">
-					<h4>Products</h4>
+	<section class="vegetables-pagake container mb-4">
+		<div class="row">
+			<div class="col-md-6 mb-3">
+				<div class="vegetables-pagake__show__product">
+					<div class="vegetables-pagake__show__product__img">
+						<img src="asset/images/product-details-2.jpg" alt="">
+					</div>
+					<section class="categories mt-5">
+						<div class="container px-0">
+							<div class="owl-carousel owl-theme position-relative">
+						    <div class="product__item" data-target="2">
+						    	<img src="asset/images/thumb-1.jpg" alt="">
+						    </div>
+						    <div class="product__item" data-target="3">
+						    	<img src="asset/images/thumb-2.jpg" alt="">
+						    </div>
+						    <div class="product__item" data-target="5">
+						    	<img src="asset/images/thumb-3.jpg" alt="">
+						    </div>
+						    <div class="product__item" data-target="4">
+						    	<img src="asset/images/thumb-4.jpg" alt="">
+						    </div>
+							</div>
+						</div>
+					</section>			
 				</div>
-				<div class="col-8 col-md-6 ">
-					<div class="row">
-						<div class="col-3 col-lg-4"><h4 class="d-flex justify-content-center">Price</h4></div>
-						<div class="col-6 col-lg-4"><h4 class="d-flex justify-content-center">Quantity</h4></div>
-						<div class="col-3 col-lg-4"><h4 class="d-flex justify-content-center">Total</h4></div>
+			</div>
+			<div class="col-md-6 mb-3">
+				<div class="vegetables-pagake__details">
+					<h4>Vetgetable’s Package</h4>
+					<div class="vegetables-pagake__details__rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<small>(18 reviews)</small>
+					</div>
+					<h3>$50.00</h3>
+					<p class="vegetables-pagake__details__text">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+					<div class="row my-5">
+						<div class="col-4 d-flex justify-content-center shopping-cart__item__button-group">
+							<button class="decrement">-</button>
+							<input type="number" value="3">
+							<button class="increment">+</button>
+						</div>
+						<button class="vegetables-pagake__details__button green">ADD TO CART</button>
+						<button class="vegetables-pagake__details__button ml-3"><i class="fa fa-heart-o"></i></button>
+					</div>
+				</div>
+				<div class="vegetables-pagake__status pt-3">
+					<div class="mt-2">
+						<h5 class="vegetables-pagake__status__label">Availability</h5>
+						<p class="vegetables-pagake__status__text"> In Stock</p>
+					</div>
+					<div class="mt-2">
+						<h5 class="vegetables-pagake__status__label">Shipping</h5>
+						<p class="vegetables-pagake__status__text">01 day shipping. Free pickup today</p>
+					</div>
+					<div class="mt-2">
+						<h5 class="vegetables-pagake__status__label">Weight</h5>
+						<p class="vegetables-pagake__status__text">0.5 kg</p>
+					</div>
+					<div class="mt-2">
+						<h5 class="vegetables-pagake__status__label">Share on</h5>
+						<div class="vegetables-pagake__status__icons">
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-instagram"></i>
+							<i class="fa fa-pinterest"></i>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container mt-4">
-			<div class="row">
-				<div class="col-sm-6 mb-3 d-flex justify-content-center justify-content-sm-start">
-					<button class="cart-btn"><a href="shop-grid.html">Continue Shopping</a></button>
-				</div>
-				<div class="col-sm-6 mb-3 d-flex justify-content-center justify-content-sm-end">
-					<button class="cart-btn" data-update="cart">Update Cart</button>
-				</div>
+	</section>	
+
+	<section class="shop-tab container mt-5">
+		<div class="shop-tab__control">
+			<h3 data-target="#description" class="active">Description</h3>
+			<h3 data-target="#information">Information</h3>
+			<h3 data-target="#reviews">Reviews</h3>
+		</div>
+		<div class="shop-tab__content">
+			<div class="shop-tab__content__item active" id="description">
+				<h4>Products Infomation</h4>
+				<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+				<br>
+				<br>
+				Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+			</div>
+			<div class="shop-tab__content__item" id="information">
+				<h4>Products Infomation</h4>
+				<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+					<br>
+					<br>
+				Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta.</p>
+			</div>
+			<div class="shop-tab__content__item" id="reviews">
+				<h4>Products Infomation</h4>
+				<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.</p>
 			</div>
 		</div>
+	</section>
+
+	<section class="featured mt-5">
 		<div class="container">
-			<div class="row mt-4">
-				<div class="col-lg-6 discount__section">
-							<h4 class="mb-3">Discount Codes</h4>
-					<div class="row">
-						<div class="col-sm-6 mb-3">
-							<input type="text" placeholder="Enter your coupon code" />
-						</div>
-						<div class="col-sm-6 mb-3">
-							<button>Apply Coupon</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 mb-3 mt-3">
-					<div class="cart-checkout p-4">
-						<h4 class="mb-4">Cart Total</h4>
-						<div class="cart-checkout__subtotal d-flex justify-content-between pb-2">
-							<h5>Sub Total</h5>
-							<span>$454.98</span>
-						</div>
-						<div class="cart-checkout__total d-flex justify-content-between mt-3">
-							<h5>Sub Total</h5>
-							<span>$454.98</span>
-						</div>
-						<button class="cart-checkout__btn mt-4">PROCEED TO CHECKOUT</button>
-					</div>
-				</div>
+			<h4 class="featured__header">Related Product
+				<div class="divider"></div>
+			</h4>
+			<div class="featured__list">
+				<div class="featured__list__item__container row px-0 mt-5">
+			    <div class="mix featured__list__item orange fresh__meat col-lg-3 col-md-4 col-sm-6 px-3" data-order="1">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-1.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Meat</h4>
+			    		<p class="featured__item__detail__price">$12.34</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item vegetables fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="2">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-2.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Banana</h4>
+			    		<p class="featured__item__detail__price">$42.45</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item fresh__meat vegetables col-lg-3 col-md-4 col-sm-6 px-3" data-order="3">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-3.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Guava</h4>
+			    		<p class="featured__item__detail__price">$332.12</p>
+			    	</div>
+			    </div>
+			    <div class="mix featured__list__item orange fastfood col-lg-3 col-md-4 col-sm-6 px-3" data-order="4">
+			    	<div class="featured__card">
+			    		<img src="asset/images/feature-4.webp" alt="">
+			    		<div class="featured__icon__group">
+			    			<div class="featured__icon"><i class="fa fa-heart"></i></div>
+			    			<div class="featured__icon"><i class="fa fa-retweet"></i></div>
+			    			<div class="featured__icon add-to-cart"><i class="fa fa-shopping-cart"></i></div>
+			    		</div>
+			    	</div>
+			    	<div class="featured__item__detail">
+			    		<h4 class="featured__item__detail__name">Watermelon</h4>
+			    		<p class="featured__item__detail__price">$35.00</p>
+			    	</div>
+			    </div>
+		    </div>
 			</div>
-		</div>
+		</div>		
 	</section>
 
 	<footer class="footer pb-4">
@@ -384,7 +502,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 	<script src="asset/dist/mixitup.min.js"></script>
 	<script src="asset/dist/jquery.slicknav.min.js"></script>
-	<script src="./js/shopping-cart.js"></script>
+	<script src="./js/shop-details.js"></script>
 	<!-- SCRIPT -->
 </body>
 </html>

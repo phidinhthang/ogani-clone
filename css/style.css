@@ -1,4 +1,4 @@
-.footer__links h5, .footer__newsletter h5 {
+.footer__links h5, .footer__newsletter h5, .blog-aside#blog-aside__form h5 {
   font-family: Cairo, sans-serif;
   font-weight: 900;
   font-size: 16px;
@@ -96,7 +96,7 @@
       .product__pagination li:hover a {
         color: white; }
 
-.aside__content__nav h4, .aside__price__filter h4, .aside__color__filter h4, .aside__size__product h4 {
+.aside__content__nav h4, .aside__price__filter h4, .aside__color__filter h4, .aside__size__product h4, .blog-aside h4, .vegetables-pagake__details h4, .vegetables-pagake__status__label, .shop-tab__control h3, .shop-tab__content__item h4, .contact__icon__item h4, .contact__form h4, .blog-details h4, .blog-details h5 {
   font-family: Cairo, sans-serif;
   font-weight: 900;
   font-size: 25px; }
@@ -184,7 +184,7 @@
 .shopping-cart__header, .shopping-cart__item {
   border-bottom: 1px solid #ddd; }
 
-.shopping-cart .discount__section button, .shopping-cart .cart-checkout__btn {
+.shopping-cart .discount__section button, .shopping-cart .cart-checkout__btn, .vegetables-pagake__details__button, .contact__form form button {
   border: none;
   outline: none;
   font-family: 'Open Sans',sans-serif;
@@ -306,6 +306,256 @@
   .shopping-cart__item__remove {
     top: 10px;
     right: 35px; } }
+
+.blog-aside#blog-aside__form form {
+  border-radius: 20px; }
+  .blog-aside#blog-aside__form form > button {
+    background-color: white !important;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    color: black !important; }
+
+.blog-aside .blog-aside__categories ul li {
+  margin-top: 30px;
+  font-size: 15px; }
+  .blog-aside .blog-aside__categories ul li a {
+    color: #6f6f6f; }
+  .blog-aside .blog-aside__categories ul li:hover a {
+    transition: color .3s;
+    color: #85b143; }
+
+.blog-aside__lastest-news ul li {
+  display: flex; }
+  .blog-aside__lastest-news ul li p {
+    color: #999; }
+
+.blog-aside__lastest-news h5 {
+  line-height: 1.2; }
+
+#blog .blog__group__card {
+  margin-bottom: 40px; }
+  #blog .blog__group__card__btn {
+    outline: none;
+    border: 1px solid #b2b2b2;
+    cursor: pointer;
+    color: #6f6f6f;
+    text-transform: uppercase;
+    padding: 12px 23px;
+    border-radius: 30px;
+    background-color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px; }
+    #blog .blog__group__card__btn i {
+      margin-left: 10px; }
+  #blog .blog__group__card h5 {
+    line-height: 1.1; }
+  #blog .blog__group__card__content__text {
+    color: #6f6f6f;
+    line-height: 1.8; }
+
+#blog .product__pagination {
+  padding-top: 30px;
+  border-top: 1px solid #ddd; }
+
+.vegetables-pagake__show__product__img img {
+  max-width: 100%; }
+
+.vegetables-pagake__details {
+  border-bottom: 1px solid #ddd; }
+  .vegetables-pagake__details h4 {
+    font-size: 30px; }
+  .vegetables-pagake__details h3 {
+    margin-top: 15px;
+    color: #dd2222;
+    font-weight: 400;
+    font-size: 30px; }
+  .vegetables-pagake__details__rate i {
+    color: #edbb0e; }
+  .vegetables-pagake__details__rate small {
+    color: #dd2222; }
+  .vegetables-pagake__details__text {
+    margin-top: 20px;
+    color: #888;
+    line-height: 1.8;
+    font-size: 14px; }
+  .vegetables-pagake__details__button {
+    background-color: #f5f5f5;
+    color: black; }
+    .vegetables-pagake__details__button.green {
+      background-color: #7fad39;
+      color: white; }
+
+.vegetables-pagake__status > div {
+  display: flex;
+  align-items: flex-start; }
+
+.vegetables-pagake__status__label {
+  font-size: 15px;
+  width: 30%;
+  flex-basis: 30%;
+  flex-grow: 0; }
+
+.vegetables-pagake__status__text {
+  font-size: 15px;
+  color: #777; }
+
+.vegetables-pagake__status i {
+  margin-right: 20px; }
+
+.shop-tab {
+  border-top: 1px solid #ddd; }
+  .shop-tab__control {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 400px;
+    max-width: 90%;
+    padding: 0 20px;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: -18px; }
+    .shop-tab__control h3 {
+      cursor: pointer;
+      font-size: 16px;
+      color: #888; }
+      .shop-tab__control h3.active {
+        color: black; }
+  .shop-tab__content__item {
+    margin-top: 30px; }
+    .shop-tab__content__item:not(.active) {
+      display: none; }
+    .shop-tab__content__item h4 {
+      font-size: 16px;
+      margin-bottom: 20px; }
+    .shop-tab__content__item p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 15px; }
+
+.contact__icon__item {
+  text-align: center; }
+  .contact__icon__item span {
+    font-family: "elegant-icons";
+    font-size: 36px;
+    color: #85b143; }
+  .contact__icon__item h4 {
+    margin-top: 20px; }
+  .contact__icon__item p {
+    color: #888;
+    font-size: 15px; }
+
+.contact__map img {
+  width: 100%;
+  height: 90vh; }
+
+.contact__form {
+  margin-top: 60px;
+  text-align: center; }
+  .contact__form h4 {
+    font-size: 36px; }
+  .contact__form form input, .contact__form form textarea {
+    width: 100%;
+    padding: 10px 25px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: 24px; }
+  .contact__form form button {
+    margin-top: 30px;
+    background-color: #7fad39;
+    color: white;
+    padding: 15px 30px;
+    font-size: 17px;
+    font-weight: bold; }
+  .contact__form form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #aaa;
+    font-size: 16px;
+    font-family: 'Open Sans',serif;
+    line-height: 28px; }
+  .contact__form form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #aaa;
+    font-size: 16px;
+    font-family: 'Open Sans',serif;
+    line-height: 28px; }
+  .contact__form form :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #aaa;
+    font-size: 16px;
+    font-family: 'Open Sans',serif;
+    line-height: 28px; }
+  .contact__form form :-moz-placeholder {
+    /* Firefox 18- */
+    color: #aaa;
+    font-size: 16px;
+    font-family: 'Open Sans',serif;
+    line-height: 28px; }
+  .contact__form form textarea {
+    resize: none; }
+  .contact__form form textarea::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Open Sans',serif; }
+  .contact__form form textarea:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Open Sans',serif; }
+  .contact__form form textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Open Sans',serif; }
+  .contact__form form textarea:-ms-input-placeholder {
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Open Sans',serif; }
+  .contact__form form textarea::placeholder {
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Open Sans',serif; }
+
+.blog-details {
+  border-bottom: 1px solid #eee; }
+  .blog-details__content__img {
+    max-width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px; }
+  .blog-details__content p {
+    color: #888;
+    line-height: 1.8; }
+  .blog-details__content h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 1; }
+  .blog-details__content__admin {
+    display: flex;
+    align-items: center; }
+    .blog-details__content__admin img {
+      border-radius: 50%;
+      margin-right: 10px; }
+    .blog-details__content__admin h5 {
+      font-size: 17px; }
+    .blog-details__content__admin p {
+      font-size: 14px; }
+  .blog-details__content__another-content h5 {
+    font-size: 17px;
+    margin-right: 10px;
+    font-weight: 800; }
+  .blog-details__content__another-content > div {
+    display: flex;
+    align-items: center; }
+    .blog-details__content__another-content > div p {
+      font-size: 14px;
+      white-space: nowrap; }
+  .blog-details__icon {
+    margin-top: 15px; }
+    .blog-details__icon i {
+      margin-right: 25px;
+      color: #888;
+      font-size: 18px; }
 
 html {
   font-family: 'Open Sans', sans-serif; }
@@ -621,19 +871,19 @@ a {
   transition: visibility 0s,opacity .3s;
   opacity: 1; }
 
-.banner__search form, .footer__newsletter form {
+.banner__search form, .footer__newsletter form, .blog-aside#blog-aside__form form {
   border: 1px solid #eee;
   display: flex;
   height: 43px;
   align-items: center;
   justify-content: space-between; }
-  .banner__search form > input, .footer__newsletter form > input {
+  .banner__search form > input, .footer__newsletter form > input, .blog-aside#blog-aside__form form > input {
     border: none;
     outline: none;
     border-left: 1px solid #eee;
     width: 60%;
     padding-left: 20px; }
-  .banner__search form > button, .footer__newsletter form > button {
+  .banner__search form > button, .footer__newsletter form > button, .blog-aside#blog-aside__form form > button {
     border: none;
     outline: none;
     background-color: #7fad39;
@@ -643,17 +893,17 @@ a {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold; }
-  .banner__search form ::-webkit-input-placeholder, .footer__newsletter form ::-webkit-input-placeholder {
+  .banner__search form ::-webkit-input-placeholder, .footer__newsletter form ::-webkit-input-placeholder, .blog-aside#blog-aside__form form ::-webkit-input-placeholder {
     /* Edge */
     color: #999;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px; }
-  .banner__search form :-ms-input-placeholder, .footer__newsletter form :-ms-input-placeholder {
+  .banner__search form :-ms-input-placeholder, .footer__newsletter form :-ms-input-placeholder, .blog-aside#blog-aside__form form :-ms-input-placeholder {
     /* Internet Explorer */
     color: #999;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px; }
-  .banner__search form ::placeholder, .footer__newsletter form ::placeholder {
+  .banner__search form ::placeholder, .footer__newsletter form ::placeholder, .blog-aside#blog-aside__form form ::placeholder {
     color: #999;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px; }
@@ -899,12 +1149,12 @@ a {
       font-size: 13px; }
       .footer__links__group > ul > li {
         margin-bottom: 10px; }
-  .footer__newsletter p {
+  .footer__newsletter p, .blog-aside#blog-aside__form p {
     font-size: 13px; }
-  .footer__newsletter form {
+  .footer__newsletter form, .blog-aside#blog-aside__form form {
     background: white;
     margin-top: 25px; }
-    .footer__newsletter form button {
+    .footer__newsletter form button, .blog-aside#blog-aside__form form button {
       width: 25%; }
   .footer__newsletter__icon {
     display: flex;

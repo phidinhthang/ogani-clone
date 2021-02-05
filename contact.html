@@ -83,18 +83,18 @@
 				<div class="col-lg-9 d-flex justify-content-center justify-content-lg-between align-items-center">
 					<ul class="header__bottom__nav d-none d-lg-block">
 						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="shop-grid.html">Shop</a></li>
+						<li><a href="shop-grid.html">Shop</a></li>
 						<li class="header__bottom__nav__dropdown">
 							<a href="#">Page</a>
 							<ul class="header__bottom__nav__dropdown__menu">
 								<li><a href="shop-details.html">Shop Details</a></li>
-								<li><a href="#">Shoping Cart</a></li>
+								<li><a href="shopping-cart.html">Shoping Cart</a></li>
 								<li><a href="#">Check Out</a></li>
 								<li><a href="#">Blog Details</a></li>
 							</ul>
 						</li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li  class="active"><a href="#">Contact</a></li>
 					</ul>
 					<div class="header__bottom__cart">
 						<div>
@@ -161,7 +161,7 @@
 					
 				</li>
 				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 			<ul class="sidebar__icon">
 				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -183,8 +183,8 @@
 
 	<!-- SUB_DROPDOWN_MENU -->
 	<ul id="sub__dropdown__menu" style="display:none">
-		<li><a href="#">Shop Details</a></li>
-		<li><a href="#">Shopping Cart</a></li>
+		<li><a href="shop-details.html">Shop Details</a></li>
+		<li><a href="shopping-cart.html">Shopping Cart</a></li>
 		<li><a href="#">Check Out</a></li>
 		<li><a href="#">Blog Details</a></li>
 	</ul>
@@ -245,67 +245,65 @@
 			</div>
 	</section>
 
+
 	<section class="breadcrumb my-5">
 		<div class="container">
-			<h1>Shopping Cart</h1>
-			<small><span>Home-</span> Shopping Cart</small>
+			<h1>Contact Us</h1>
+			<small><span>Home-</span> Contact Us</small>
 		</div>
 	</section>
 
-	<section class="shopping-cart">
-		<div class="container shopping-cart__wrapper">
-			<div class="row shopping-cart__header pb-3">
-				<div class="col-4 col-md-6">
-					<h4>Products</h4>
+	<section class="contact__icon container pt-4 mb-5">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="contact__icon__item mb-5">
+					<span class="ei-icon_phone"></span>
+					<h4>Phone</h4>
+					<p>+01-3-8888-6868</p>
 				</div>
-				<div class="col-8 col-md-6 ">
-					<div class="row">
-						<div class="col-3 col-lg-4"><h4 class="d-flex justify-content-center">Price</h4></div>
-						<div class="col-6 col-lg-4"><h4 class="d-flex justify-content-center">Quantity</h4></div>
-						<div class="col-3 col-lg-4"><h4 class="d-flex justify-content-center">Total</h4></div>
-					</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="contact__icon__item mb-5">
+					<span class="ei-icon_pin_alt"></span>
+					<h4>Address</h4>
+					<p>60-49 Road 11378 New York</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="contact__icon__item mb-5">
+					<span class="ei-icon_clock_alt"></span>
+					<h4>Open time</h4>
+					<p>10:00 am to 23:00 pm</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="contact__icon__item mb-5">
+					<span class="ei-icon_mail_alt"></span>
+					<h4>Email</h4>
+					<p>hello@colorlib.com</p>
 				</div>
 			</div>
 		</div>
-		<div class="container mt-4">
+	</section>
+
+	<section class="contact__map">
+		<img src="asset/images/google@2x.png" alt="">
+	</section>
+
+	<section class="contact__form container">
+		<form>
+			<h4 class="mb-5">Leave Message</h4>
 			<div class="row">
-				<div class="col-sm-6 mb-3 d-flex justify-content-center justify-content-sm-start">
-					<button class="cart-btn"><a href="shop-grid.html">Continue Shopping</a></button>
+				<div class="col-md-6 mb-4">
+					<input type="text" placeholder="Your Name">
 				</div>
-				<div class="col-sm-6 mb-3 d-flex justify-content-center justify-content-sm-end">
-					<button class="cart-btn" data-update="cart">Update Cart</button>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row mt-4">
-				<div class="col-lg-6 discount__section">
-							<h4 class="mb-3">Discount Codes</h4>
-					<div class="row">
-						<div class="col-sm-6 mb-3">
-							<input type="text" placeholder="Enter your coupon code" />
-						</div>
-						<div class="col-sm-6 mb-3">
-							<button>Apply Coupon</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 mb-3 mt-3">
-					<div class="cart-checkout p-4">
-						<h4 class="mb-4">Cart Total</h4>
-						<div class="cart-checkout__subtotal d-flex justify-content-between pb-2">
-							<h5>Sub Total</h5>
-							<span>$454.98</span>
-						</div>
-						<div class="cart-checkout__total d-flex justify-content-between mt-3">
-							<h5>Sub Total</h5>
-							<span>$454.98</span>
-						</div>
-						<button class="cart-checkout__btn mt-4">PROCEED TO CHECKOUT</button>
-					</div>
+				<div class="col-md-6 mb-4">
+					<input type="text" placeholder="Your Email">
 				</div>
 			</div>
-		</div>
+			<textarea placeholder="Your message" id="" cols="30" rows="6"></textarea>
+			<button>SEND MESSAGE</button>
+		</form>
 	</section>
 
 	<footer class="footer pb-4">
@@ -384,7 +382,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
 	<script src="asset/dist/mixitup.min.js"></script>
 	<script src="asset/dist/jquery.slicknav.min.js"></script>
-	<script src="./js/shopping-cart.js"></script>
+	<script src="./js/contact.js"></script>
 	<!-- SCRIPT -->
 </body>
 </html>

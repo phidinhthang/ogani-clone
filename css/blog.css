@@ -1,0 +1,24 @@
+#blog .blog__group__card {
+  margin-bottom: 40px; }
+  #blog .blog__group__card__btn {
+    outline: none;
+    border: 1px solid #b2b2b2;
+    cursor: pointer;
+    color: #6f6f6f;
+    text-transform: uppercase;
+    padding: 12px 23px;
+    border-radius: 30px;
+    background-color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px; }
+    #blog .blog__group__card__btn i {
+      margin-left: 10px; }
+  #blog .blog__group__card h5 {
+    line-height: 1.1; }
+  #blog .blog__group__card__content__text {
+    color: #6f6f6f;
+    line-height: 1.8; }
+
+#blog .product__pagination {
+  padding-top: 30px;
+  border-top: 1px solid #ddd; }
