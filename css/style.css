@@ -966,6 +966,23 @@ a {
         margin: 0; }
         .sidebar__menu__dropdown .slicknav_nav > li:last-child, .sidebar__menu__dropdown .slicknav_nav .slicknav_nav > li:last-child {
           border-bottom: none; }
+  .sidebar__icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex; }
+    .sidebar__icon > li {
+      margin-right: 15px; }
+      .sidebar__icon > li a i {
+        font-size: 14px; }
+  .sidebar__email {
+    display: flex; }
+    .sidebar__email i {
+      margin-right: 20px; }
+    .sidebar__email p {
+      font-size: 15px; }
+  .sidebar__detail {
+    margin-top: 20px;
+    font-size: 15px; }
 
 .banner__categories {
   border: 1px solid #fefefe; }
