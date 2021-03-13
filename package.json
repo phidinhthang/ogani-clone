@@ -1,0 +1,17 @@
+{
+  "name": "ogani",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "purgecss": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purge": "purgecss --css asset/dist/bootstrap-grid.min.css --content ./*.html --output asset/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
